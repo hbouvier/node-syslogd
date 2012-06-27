@@ -8,6 +8,7 @@ var dgram = require('dgram'),
 
 server = dgram.createSocket('udp4');
 server.on('message', function(msg, rinfo) {
+/*
     //util.log('server got: ' + msg + ' from ' + rinfo.address + ':' + rinfo.port);
     var logline = syslog_re.exec(msg);
     var loginfo = {
@@ -19,6 +20,7 @@ server.on('message', function(msg, rinfo) {
     };
     //util.log('server got: ' + msg + ' from ' + rinfo.address + ':' + rinfo.port + '|' + util.inspect(loginfo));
     //util.log(util.inspect(loginfo));
+*/
     util.log(msg);
 
 });
